@@ -2,7 +2,7 @@ import React from 'react';
 
 const PageHeader = ({ title, description, icon: Icon }) => {
     return (
-        <div className="bg-[#1A73E8] py-16 md:py-24 relative overflow-hidden">
+        <div className="bg-[#1A73E8] pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden">
             {/* Background Pattern/Decoration */}
             <div className="absolute top-0 right-0 p-12 opacity-10 transform translate-x-1/2 -translate-y-1/2">
                 {Icon && <Icon size={400} className="text-white" />}
