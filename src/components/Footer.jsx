@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -23,14 +23,8 @@ const Footer = () => {
                             <a href="https://www.facebook.com/profile.php?id=61584777961289" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors">
                                 <Facebook size={20} />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
-                                <Twitter size={20} />
-                            </a>
                             <a href="https://www.instagram.com/neat_nexus_solutions?igsh=OWQwMG02cXR6b243" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition-colors">
                                 <Instagram size={20} />
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-                                <Linkedin size={20} />
                             </a>
                         </div>
                     </div>
