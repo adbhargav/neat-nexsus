@@ -10,7 +10,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <PageHeader
                 title="Contact Us"

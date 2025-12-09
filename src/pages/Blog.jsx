@@ -7,7 +7,7 @@ import { blogPosts } from '../data/blogData';
 
 const Blog = () => {
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <PageHeader
                 title="Our Blog"

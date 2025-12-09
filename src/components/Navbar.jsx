@@ -34,13 +34,13 @@ export default function Navbar() {
     }, [location]);
 
     return (
-        <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-white shadow-xl py-3" : "bg-white/90 backdrop-blur-md py-3"
+        <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-[#F1F5F9] shadow-xl py-3" : "bg-[#F1F5F9]/90 backdrop-blur-md py-3"
             }`}>
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6">
                 {/* Logo */}
                 <Link to="/" className="flex items-center animate-fade-in-down gap-3">
-                    <img src="/logo.png" alt="Neat Nexus Logo" className="h-16 md:h-20 w-auto" />
-                    <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
+                    <img src="/logo.png" alt="Neat Nexus Logo" className="h-20 md:h-24 w-auto" />
+                    <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
                         <span className="text-[#1A73E8]">NEAT NEXUS</span>
                     </h1>
                 </Link>

@@ -4,7 +4,7 @@ import HeroSlider from "../components/Hero";
 
 export default function Home() {
     return (
-        <div className="bg-gradient-to-b from-[#F8FAFB] to-white pt-20">
+        <div className="pt-24 md:pt-32">
 
             {/* ================= HERO SECTION ================= */}
             <HeroSlider />

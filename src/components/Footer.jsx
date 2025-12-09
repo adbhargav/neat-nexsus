@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Column 1: Brand & About */}
                     <div>
                         <Link to="/" className="flex items-center mb-4 gap-3">
-                            <img src="/logo.png" alt="Neat Nexus Logo" className="h-20 w-auto bg-white p-2 rounded-lg" />
+                            <img src="/logo.png" alt="Neat Nexus Logo" className="h-20 w-auto brightness-0 invert" />
                             <span className="text-2xl font-bold text-white">
                                 <span className="text-blue-500"> NEAT NEXUS</span>
                             </span>
@@ -20,13 +20,13 @@ const Footer = () => {
                             Empowering your lifestyle with premium home and business services. From housekeeping to digital solutions, we handle it all with excellence.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
+                            <a href="https://www.facebook.com/profile.php?id=61584777961289" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors">
                                 <Facebook size={20} />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
                                 <Twitter size={20} />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-pink-500 transition-colors">
+                            <a href="https://www.instagram.com/neat_nexus_solutions?igsh=OWQwMG02cXR6b243" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500 transition-colors">
                                 <Instagram size={20} />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
@@ -97,6 +97,14 @@ const Footer = () => {
                             <li className="flex items-center">
                                 <Mail size={20} className="text-blue-500 mr-3 flex-shrink-0" />
                                 <span className="text-gray-400 text-sm">hello@neatnexus.in</span>
+                            </li>
+                            <li className="mt-4 pt-4 border-t border-gray-800">
+                                <h4 className="text-white font-semibold text-sm mb-2">Business Hours</h4>
+                                <ul className="space-y-1 text-gray-400 text-xs">
+                                    <li className="flex justify-between"><span>Mon - Fri:</span> <span>9:00 AM - 6:00 PM</span></li>
+                                    <li className="flex justify-between"><span>Saturday:</span> <span>9:00 AM - 4:00 PM</span></li>
+                                    <li className="flex justify-between"><span>Sunday:</span> <span>10:00 AM - 2:00 PM</span></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>

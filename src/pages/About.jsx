@@ -34,7 +34,7 @@ const About = () => {
     ];
 
     return (
-        <div className="bg-white min-h-screen">
+        <div className="min-h-screen">
             {/* Hero Section */}
             <PageHeader
                 title="About Us"

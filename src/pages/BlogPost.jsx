@@ -25,9 +25,9 @@ const BlogPost = () => {
     }
 
     return (
-        <div className="bg-white min-h-screen">
+        <div className="min-h-screen">
             {/* Custom Header for Blog Post */}
-            <div className="bg-[#1A73E8] py-20 relative overflow-hidden">
+            <div className="bg-[#1A73E8] pt-32 pb-20 md:pt-40 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-12 opacity-10">
                     <div className="w-64 h-64 rounded-full bg-white blur-3xl"></div>
                 </div>

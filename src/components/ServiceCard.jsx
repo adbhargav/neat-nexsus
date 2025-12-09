@@ -2,7 +2,61 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const ServiceCard = ({ title, description, icon, image, index }) => {
+const ServiceCard = ({ title, description, icon, image, index, colorTheme = "blue" }) => {
+
+    const themeClasses = {
+        blue: {
+            bgLight: "bg-blue-500/10",
+            text: "text-blue-600",
+            hoverText: "group-hover:text-blue-600",
+            buttonText: "text-blue-600",
+            buttonHover: "hover:text-blue-700",
+            iconColor: "text-blue-600"
+        },
+        red: {
+            bgLight: "bg-red-500/10",
+            text: "text-red-600",
+            hoverText: "group-hover:text-red-600",
+            buttonText: "text-red-600",
+            buttonHover: "hover:text-red-700",
+            iconColor: "text-red-600"
+        },
+        purple: {
+            bgLight: "bg-purple-500/10",
+            text: "text-purple-600",
+            hoverText: "group-hover:text-purple-600",
+            buttonText: "text-purple-600",
+            buttonHover: "hover:text-purple-700",
+            iconColor: "text-purple-600"
+        },
+        cyan: {
+            bgLight: "bg-cyan-500/10",
+            text: "text-cyan-600",
+            hoverText: "group-hover:text-cyan-600",
+            buttonText: "text-cyan-600",
+            buttonHover: "hover:text-cyan-700",
+            iconColor: "text-cyan-600"
+        },
+        green: {
+            bgLight: "bg-green-500/10",
+            text: "text-green-600",
+            hoverText: "group-hover:text-green-600",
+            buttonText: "text-green-600",
+            buttonHover: "hover:text-green-700",
+            iconColor: "text-green-600"
+        },
+        orange: {
+            bgLight: "bg-orange-500/10",
+            text: "text-orange-600",
+            hoverText: "group-hover:text-orange-600",
+            buttonText: "text-orange-600",
+            buttonHover: "hover:text-orange-700",
+            iconColor: "text-orange-600"
+        }
+    };
+
+    const theme = themeClasses[colorTheme] || themeClasses.blue;
+
     return (
         <div
             className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full animate-fade-in-up"
@@ -17,23 +71,23 @@ const ServiceCard = ({ title, description, icon, image, index }) => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
 
-                {/* Floating Icon */}
-                <div className="absolute -bottom-6 right-6 bg-[#1A73E8] p-3 rounded-xl shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300 border-4 border-white">
-                    {/* Clone icon to adjust size if needed, or render as is */}
-                    {React.cloneElement(icon, { size: 28, className: "text-white" })}
-                </div>
+                {/* Floating Icon - Removed */}
             </div>
 
             {/* Content Section */}
-            <div className="p-8 pt-10 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-[#1A73E8] transition-colors">
+            <div className="p-8 flex flex-col flex-grow">
+                <div className={`mb-4 ${theme.bgLight} w-14 h-14 rounded-lg flex items-center justify-center ${theme.iconColor}`}>
+                    {React.cloneElement(icon, { size: 32, className: "currentColor" })}
+                </div>
+
+                <h3 className={`text-2xl font-bold text-gray-900 mb-3 ${theme.hoverText} transition-colors`}>
                     {title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6 line-clamp-3 flex-grow">
                     {description}
                 </p>
 
-                <Link to="/contact" className="inline-flex items-center font-bold text-[#1A73E8] hover:text-[#1557B0] transition-colors group/btn mt-auto">
+                <Link to="/contact" className={`inline-flex items-center font-bold ${theme.buttonText} ${theme.buttonHover} transition-colors group/btn mt-auto`}>
                     Book Now
                     <ArrowRight className="ml-2 w-5 h-5 transform group-hover/btn:translate-x-1 transition-transform" />
                 </Link>
