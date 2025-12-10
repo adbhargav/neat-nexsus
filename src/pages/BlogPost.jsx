@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, User, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { blogPosts } from '../data/blogData';
 import ContactPreview from '../components/ContactPreview';
 
@@ -73,14 +73,7 @@ const BlogPost = () => {
                     {/* Content injected here */}
                 </div>
 
-                <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
-                    <div className="text-gray-400 italic">
-                        Shared by {post.author}
-                    </div>
-                    <button className="flex items-center text-blue-400 font-bold hover:text-blue-300 transition-colors">
-                        <Share2 size={20} className="mr-2" /> Share Post
-                    </button>
-                </div>
+
             </article>
 
             <ContactPreview />
